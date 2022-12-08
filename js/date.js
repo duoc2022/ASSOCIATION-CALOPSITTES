@@ -1,9 +1,3 @@
-/*!
-////////////////////////////////////////
-  * Javascript document : DATE
- //////////////////////////////////////
-  */
-
 const hours = document.getElementById("hours"),
   minutes = document.getElementById("minutes"),
   seconds = document.getElementById("seconds"),
