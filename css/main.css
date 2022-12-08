@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  font-family: 'Lato', sans-serif
+}
+.mise-en-page-lien, .mise-en-page {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box
+}
+.mise-en-page-lien {
+  clear: both;
+}
+.mise-en-page * {
+  box-sizing: border-box
+}
+.mise-en-page h2:first-child {
+  margin-top: 0
+}
+.mise-en-page-lien .bloc-mise-en-page {
+  flex: 0 1 auto !important;
+  min-width: 200px !important;
+  width: auto !important;
+  background-color: #fff
+}
+.bloc-sites {
+  min-width: 200px;
+  margin-bottom: 10px
+}
+@media (max-width : 300px) {
+  .mise-en-page-lien .bloc-mise-en-page {
+    width: 100%
+  }
+}
+.bloc-mise-en-page {
+  margin: 10px
+}
+.bloc-lien {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  transition: box-shadow 350ms linear;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.47)
+}
+.bloc-sites {
+  border: 1px solid gainsboro
+}
+.bloc-sites:hover {
+  border: 1px solid grey
+}
+.bloc-lien:hover {
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.47)
+}
+.bloc-lien h2 {
+  margin-top: 0
+}
+.bloc-lien li:hover, .bloc-sites:hover li, .bloc-sites:hover h2, .bloc-sites:hover a:link, .bloc-sites:hover a:visited, .bloc-sites:hover a, .bloc-lien a:link, .bloc-lien a:visited, .bloc-lien a {
+  color: #000;
+  text-decoration: none
+}
+.bloc-sites:hover li:hover, .bloc-sites:hover a:active, .bloc-sites:hover a:hover, .bloc-lien li:hover, .bloc-lien a:active, .bloc-lien a:hover {
+  color: green
+}
+.bloc-sites:hover a:active, .bloc-sites:hover a:hover, .bloc-lien a:active, .bloc-lien a:hover {
+  text-decoration: underline
+}
+.bloc-sites li, .bloc-sites a:link, .bloc-sites a:visited, .bloc-sites a, .bloc-sites li:hover, .bloc-sites a:active, .bloc-sites a:hover, .bloc-sites h2 {
+  color: lightgray
+}
+.mise-en-page-lien ul, .mise-en-page-lien li {
+  border: none !important
+}
+body .mise-en-page-lien .bloc-sites ul li a {
+  display: inline !important
+}
