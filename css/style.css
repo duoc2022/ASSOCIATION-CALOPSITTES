@@ -1,0 +1,356 @@
+/* //////////////////////////////////////////////
+Plus d'informations liées à la solution  : 
+////////////////////////////////////////////// 
+## Sélecteur CSS :root
+https://www.zonecss.fr/proprietes-css/root-css-selector.html#VwYvGQG0000.codepen
+## Fonction CSS var()
+https://www.zonecss.fr/proprietes-css/var-css-fonction.html#VwYvGQG0000.codepen
+*/
+:root {
+  --color: dark;
+  --body-color: white;
+  --mise-en-page-bg: #66c2ff; 
+  --form-bg: #66c2ff;
+  --form-border-color: #313131;
+}
+.mode-dark {
+  --color: #fff;
+  --body-color: #a366ff;
+  --mise-en-page-bg: #6A39A8; 
+  --form-bg: #a366ff;
+  --form-border-color: #fff;
+}
+
+form{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-radius: 15px;
+	align-content: center;
+	justify-content: center;
+  padding:5px;
+	color: var(--color);
+  border-color: var(--form-border-color);
+  border-style:solid;
+  border-width: 1px 0;
+  background-color: var(--form-bg);  
+}
+
+.btToggle .btn {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  line-height : 34px;
+  color:#fff;
+}
+
+/* Hide default HTML checkbox */
+.btToggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.btToggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0; 
+  bottom: 0;
+  right:0;
+  background-color:  #6A39A8;  
+  border-radius: 34px; 
+  white-space : nowrap;
+}
+
+.btToggle .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #66c2ff; 
+  border-radius: 50%;
+}
+
+.btToggle input:checked + .slider {
+  background-color: #66c2ff;
+  padding-left: 18px;
+  padding-right: 36px;
+}
+
+.btToggle input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+  color:#000;
+}
+
+.btToggle input:checked + .slider:before {
+  right:4px;
+  left:auto;
+  background-color: #6A39A8;
+}
+.mise-en-page-lien .bloc-mise-en-page{
+	border-radius: 15px;
+  background-color: var(--mise-en-page-bg);
+}
+.bloc-lien {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  transition: box-shadow 350ms linear;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.47)
+}
+.bloc-lien:hover {
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.47)
+}
+.bloc-lien h2 {
+  margin-top: 0
+}
+.bloc-lien li:hover, .bloc-sites:hover li, .bloc-sites:hover h2, .bloc-sites:hover a:link, .bloc-sites:hover a:visited, .bloc-sites:hover a, .bloc-lien a:link, .bloc-lien a:visited, .bloc-lien a {
+  color: #000;
+  text-decoration: none
+}
+.bloc-lien a:link, .bloc-lien a:visited, .p a{
+    color: #175816;
+}
+.logo {
+  width: 50%;
+  margin-left: 25%;
+  box-shadow: #222 0px 4px 8px -2px;
+  background-color: #79CFF3;
+}
+.logo:hover {
+  width: 50%;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 2px;
+  -webkit-box-shadow: 8px 4px 6% #79CFF3;
+  box-shadow: 10px 6px 8% #79CFF3;
+}
+.clock {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: darkblue;
+    text-shadow: 0 0 8px black;
+    position: relative;
+    font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .clock {
+    font-size: 6vw;
+    color: #845488;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+	margin-left: 3%;
+	margin-right: 3%;
+  font-size: 17px;
+  text-align: center;
+}
+.flex-item-left {
+  background-color:#e0d6f2;
+  padding: 10px 10px 10px 10px;
+  flex: 20%;
+	text-align: center;
+}
+.flex-item-center {
+  background-color:#e0d6f2;
+  padding: 10px 10px 10px 10px;
+  flex: 20%;
+		text-align: center;
+}
+.flex-item-right {
+  background-color: #e0d6f2;
+  padding: 10px 10px 10px 10px;
+  flex: 20%;
+		text-align: center;	
+}
+.container {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  display: flex;
+  overflow-x: hidden;
+}
+.text {
+
+    background-color: var(--mise-en-page-bg);
+}
+.text a:link, .text a:visited, .text {
+  color: var(--color);
+    width: 63%;
+    text-align: justify;
+}
+.ul {
+text-align: center;
+}
+.boxes {
+  min-height: 0px;
+  width: 100%;
+  margin: 10px;
+  padding-left: 10%;
+  position: relative;
+  display: block;
+  background-color: #6A39A8;
+  color: #9472C4;
+  box-shadow: #222 0px 4px 8px -2px;
+}
+.boxes:hover {
+  color: #A47EE9;
+  box-shadow: #222 0px 6px 10px -2px;
+}
+.left, .right, .center {
+  flex: 30%;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1250px) {
+  .flex-container {
+    width: 70%;
+    margin-left: 15%;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+    padding: 10px 10px 10px 10px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .left, .right {
+    flex-direction: column;
+  }
+}
+.logo-footer {
+    margin-left: 20%;
+}
+.bloc-newsletter {
+    width: 60%;
+}
+.lien-fort {
+    color: #FF9600;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/*============================= BOUTON PULSE =============================== */
+.evenement {
+    width: 50%;
+    margin-left: 25%;
+    background-color: #468A32;
+    color: #FFFFFF;
+    font-size: large;
+    border-radius: 13px;
+    margin-bottom: 17px;
+  -webkit-animation: pulse 1s ease infinite;
+  -moz-animation: pulse 1s ease infinite;
+  -ms-animation: pulse 1s ease infinite;
+  -o-animation: pulse 1s ease infinite;
+  animation: pulse 1s ease infinite;
+}
+.evenement:hover {
+  color: #fff;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  25% {
+    -webkit-transform: scale(1.1);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+  }
+
+  25% {
+    -moz-transform: scale(1.1);
+  }
+
+  50% {
+    -moz-transform: scale(1);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+
+@-ms-keyframes pulse {
+  0% {
+    -ms-transform: scale(1);
+  }
+
+  25% {
+    -ms-transform: scale(1.1);
+  }
+
+  50% {
+    -ms-transform: scale(1);
+  }
+
+  100% {
+    -ms-transform: scale(1);
+  }
+}
+
+@-o-keyframes pulse {
+  0% {
+    -o-transform: scale(1);
+  }
+
+  25% {
+    -o-transform: scale(1.1);
+  }
+
+  50% {
+    -o-transform: scale(1);
+  }
+
+  100% {
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
