@@ -21,7 +21,7 @@ Modalités Pédagogiques
 Modalités / Restrictions :
 1. Réalisation de l'interface en mobile first et utilisation des médias queries pour la rendre
 adaptable a tous les formats d'écran.
-2. Un dépôt git avec des commit réguliers.# evaluation_1_studi
+2. Un dépôt git avec des commit réguliers. #Creer-un-site-web-avec-HTML-CSS-et-Bootstrap
 
 Barème et critères d’évaluation
 
